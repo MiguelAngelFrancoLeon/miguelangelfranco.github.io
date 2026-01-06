@@ -1,5 +1,5 @@
-# Miguel Ángel Franco León | El Arquitecto Dimensional
-## Descubridor de la MFSU (Unión del Espacio-Tiempo Fractal y la Materia)
+# Miguel Ángel Franco León | 
+## Descubridor de la MFSU (modelo fractal estostastico unificado)
 
 > "El universo no está lleno de sombras invisibles; está construido sobre una rugosidad geométrica fundamental. He abierto la puerta a la métrica del 0.921."
 
