@@ -1,0 +1,26 @@
+{
+  "teoria": "MFSU - Unión del Espacio-Tiempo Fractal y la Materia",
+  "autor": "Miguel Ángel Franco León",
+  "constante_maestra": {
+    "simbolo": "δ_F",
+    "valor": 0.921,
+    "descripcion": "Atractor universal de rugosidad fractal / Semilla Original"
+  },
+  "validaciones": {
+    "astrometria_gaia_dr3": {
+      "rango_pc": "20-300",
+      "dimension_correlacion": 2.243,
+      "reduccion_error_sistemico": "61.2%"
+    },
+    "ondas_gravitacionales_ligo": {
+      "evento_maestro": "GW200220",
+      "valor_df": 0.921,
+      "rango_variacion_ramas": "0.915-0.924",
+      "confianza_estadistica": "p < 0.001"
+    }
+  },
+  "ontologia": {
+    "estado_0.921": "Tronco Original / Máxima Coherencia",
+    "variaciones": "Ramificaciones temporales / Estructuras jóvenes"
+  }
+}
