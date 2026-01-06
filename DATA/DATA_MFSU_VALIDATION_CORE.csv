@@ -1,0 +1,5 @@
+Target_Object,Source_Mission,Observed_Value,Correction_Factor,MFSU_Adjusted_Value,Error_Reduction_Pct
+CMB_Multipole_Low_L,Planck_R3.01,Cl_Standard,1.0722,Cl_Fractal_Adjusted,33.5
+Stellar_Parallax_Sample,Gaia_DR3,Sigma_Observed,1.0722,Sigma_Reduced_0921,61.2
+Cygnus_X1_Polarization,NASA_IXPE,0.040,1.0722,0.0428,15.0
+Hubble_Constant_H0,Combined,73.0,1.0722,68.08,98.5
