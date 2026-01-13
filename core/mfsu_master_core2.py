@@ -128,4 +128,4 @@ ax = fig.add_subplot(111, projection='3d')
 ax.scatter(x, y, z, c=flux, cmap='viridis')
 ax.set_title('Simulación 3D Flujo Fractal (D_f = 2.079, χ = 5.85)')
 plt.show()</parameter>
-</xai:function_call>
+
