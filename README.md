@@ -86,7 +86,7 @@ Estos documentos contienen la validación matemática y experimental de la teor�
 | **Infinite Fractal Cubes Theory (IFCT)** | Quaterniones y constante fractal $\delta_G \approx 0.921$ | [Ver PDF](./PAPERS/Infinite_Fractal_Cubes_Theory.pdf) |
 | **Report on the Gauss Fractal Formula** | Aplicaciones, comparaciones y validación | [Ver PDF](./PAPERS/Report_Gauss_Fractal_Formula.pdf) |
 | **Unified Stochastic Fractal Model** | Sistemas complejos en física y cosmología | [Ver PDF](./PAPERS/Unified_Stochastic_Fractal_Model.pdf) |
-
+| ** Coupling Constant** |Theoretical Derivation of the MFSU Metric Constants  | [Ver PDF](./5_85.pdf) |
 
 ---
 **Autor:** Miguel Ángel Franco León  
