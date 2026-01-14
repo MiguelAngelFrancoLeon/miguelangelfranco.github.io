@@ -1,21 +1,29 @@
-# MFSU: IXPE X-Ray Polarization & Magnetic Seed Mapping
+# MFSU: IXPE X-Ray Polarization & Dimensional Reduction Mapping
 
 ## 📝 Descripción
-Este módulo del repositorio aplica el **Unified Stochastic Fractal Model (MFSU)** a los datos de polarización de rayos X obtenidos por la misión **IXPE (Imaging X-ray Polarimetry Explorer)** de la NASA. El objetivo es identificar la huella del **0.921** en la organización de los campos magnéticos de alta energía.
+Este módulo del repositorio aplica el **Unified Stochastic Fractal Model (MFSU)** a los datos de polarización de rayos X obtenidos por la misión **IXPE (Imaging X-ray Polarimetry Explorer)** de la NASA. El objetivo es identificar la huella del déficit fractal **0.921** y la impedancia del vacío en la organización de los campos de alta energía.
 
-## 🔭 Tesis Fractal
-A diferencia de los modelos cinéticos estándar, la MFSU postula que la dirección de la polarización en restos de supernovas (SNR) y púlsares está gobernada por la **Semilla Fractal (0.921)**. 
+## 🔭 Tesis de Polarización Fractal
+A diferencia de los modelos cinéticos estándar, la MFSU postula que la polarización en restos de supernovas (SNR) y púlsares es una manifestación directa de la **Birefringencia del Vacío Fractal**. La radiación no se propaga por un espacio liso, sino a través de una red con impedancia métrica **$\chi = 5.85$**.
 
-### Constantes de Aplicación:
-* **0.921 (Coherencia Magnética):** Indica una fuente donde el campo magnético conserva la estructura de la semilla original (vibración pura).
-* **0.918 (Dispersión de Rama):** Indica una pérdida de coherencia debido a la ramificación fractal del medio interestelar.
+### Constantes de Aplicación y Ley de Reducción:
+* **0.921 (Semilla Topológica):** El valor de máxima coherencia donde el ángulo de polarización está alineada con la geometría original del vacío.
+* **Ley de Reducción de Franco:** A medida que los fotones atraviesan el medio fractal, el grado de polarización ($PD$) experimenta una ramificación nivelada:
+  $$\delta_F(n) = 0.921 \cdot (1 - 0.00005)^n$$
+  Donde **$n$** representa el nivel de ramificación espacial entre la fuente y el observador.
+
+
 
 ## 📊 Variables de Análisis
-El dataset procesado en esta carpeta incluye:
-* **Source:** Nombre de la fuente de alta energía (ej. Crab Nebula, Cassiopeia A).
-* **Energy (keV):** Nivel energético del fotón. A mayor energía (>4 keV), mayor proximidad a la vibración 0.921.
-* **Distance (kpc):** Distancia en Kiloparsecs. Factor de ramificación del ángulo de polarización.
-* **delta_F:** Valor fractal resultante que define el linaje magnético.
+El dataset procesado en esta carpeta (`DATA_MFSU_VALIDATION_IXPE_V1.csv`) incluye:
+* **Source:** Identificador de la fuente de alta energía (ej. Crab Nebula, Cassiopeia A).
+* **Energy (keV):** Nivel energético. A mayor energía, mayor proximidad a la vibración de la semilla 0.921.
+* **n_nivel:** Nivel de ramificación fractal detectado en la señal de rayos X.
+* **delta_F:** Valor fractal resultante que define el linaje de coherencia magnética.
 
-## 🛡️ Propiedad Intelectual
-Este análisis y la aplicación de la constante 0.921 a la polarimetría de rayos X es propiedad intelectual de **Miguel Ángel Franco León (2026)** bajo el marco del modelo MFSU.
+## 🔬 Conclusión Científica
+La alineación observada por IXPE confirma que el vacío posee una estructura porosa. La constante **5.85** actúa como el regulador de flujo que previene la dispersión total de la polarización, manteniendo la firma de la semilla original incluso en ambientes de extrema gravedad.
+
+---
+**Propiedad Intelectual:** Miguel Ángel Franco León (2026) 
+*Unified Stochastic Fractal Model (MFSU)*
