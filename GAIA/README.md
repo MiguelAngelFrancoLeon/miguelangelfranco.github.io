@@ -1,12 +1,22 @@
-# MFSU: GAIA Galactic Astrometry & Stellar Coherence
+# MFSU: GAIA Stellar Kinematics & Fractal Vorticity
 
 ## 📝 Descripción
-Este módulo analiza la posición y el movimiento de las estrellas de la Vía Láctea utilizando datos de la misión **Gaia (ESA)**. Se busca validar la estabilidad de la constante **0.921** en el entorno estelar cercano.
+Este módulo aplica el **Unified Stochastic Fractal Model (MFSU)** a los datos de astrometría de precisión de la misión **Gaia (ESA)**. Analizamos las anomalías en las velocidades residuales de las estrellas en el disco galáctico.
 
-## 🔭 Tesis Fractal
-En el entorno de la Vía Láctea, la densidad de materia bariónica actúa como un estabilizador del tejido fractal. El modelo MFSU predice que la gran mayoría de las estrellas dentro de un radio de 10 kpc mantendrán la **Coherencia de Semilla (0.921)**.
+## 🔭 Tesis del Movimiento Fractal
+La MFSU postula que el movimiento estelar no ocurre en un espacio vacío, sino en un flujo organizado por la **Métrica 5.85**. Las desviaciones en las velocidades (proper motions) son el resultado de la interacción entre la masa bariónica y la vorticidad del vacío fractal.
 
-## 📊 Variables
-* **Star ID:** Identificador de Gaia.
-* **Distance (pc):** Distancia en Parsecs.
-* **Proper Motion:** Movimiento propio que indica la salud de la rama fractal.
+### Ecuación de Ajuste Gaia-MFSU:
+Las estrellas experimentan una aceleración adicional $a_{mfsu}$ dependiente de la semilla 0.921:
+$$a_{mfsu} = a_{newton} \cdot \left( \frac{\delta_F}{\chi} \right)^{-1}$$
+
+
+
+## 📊 Variables de Análisis (`DATA_MFSU_VALIDATION_GAIA_V1.csv`)
+* **Source_ID:** Identificador único de Gaia DR3.
+* **Parallax:** Distancia precisa para determinar el nivel de ramificación $n$.
+* **Radial_Velocity:** Velocidad medida vs. Velocidad predicha por MFSU.
+* **Fractal_Vorticity:** El grado de torsión del espacio-tiempo en esa región.
+
+---
+**Propiedad Intelectual:** Miguel Ángel Franco León (2026)
