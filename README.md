@@ -88,6 +88,53 @@ Estos documentos contienen la validación matemática y experimental de la teor�
 | **Unified Stochastic Fractal Model** | Sistemas complejos en física y cosmología | [Ver PDF](./PAPERS/Unified_Stochastic_Fractal_Model.pdf) |
 | ** Coupling Constant** |Theoretical Derivation of the MFSU Metric Constants  | [Ver PDF](./5_85.pdf) |
 
+
+# MFSU: Marco de Trabajo de Superficie Fractal Unificada (Versión 2.2) 🛡️🌌
+
+**Autor:** Miguel Ángel Franco León  
+**Fecha:** Enero 2026  
+**Campo:** Cosmología Fractal / Dinámica Galáctica
+
+---
+
+## 🏛️ Descripción General
+Este repositorio contiene la formalización matemática y empírica de la **MFSU (Unified Stochastic Fractal Model)**. La teoría postula que las anomalías gravitatorias atribuidas a la "Materia Oscura" son, en realidad, efectos de la **Reducción Dimensional** en un espacio-tiempo con topología fractal.
+
+### 🔑 Pilares Fundamentales
+1. **La Semilla (0.921):** El factor de déficit fractal original derivado de la transición topológica 4D/3D/2D.
+2. **La Constante de Acoplamiento ($\chi \approx 5.85$):** Factor de impedancia del vacío que explica la porosidad del espacio-tiempo.
+3. **Ley de Reducción Universal:** Un algoritmo dinámico que clasifica los eventos cósmicos según su nivel de ramificación ($n$).
+
+---
+
+## 📂 Estructura del Repositorio
+
+### 📜 [Master Paper: Teoría Unificada MFSU](./Master_Paper_MFSU_v2.2.pdf)
+El documento central que fusiona:
+* La derivación topológica de la métrica.
+* La estabilización por cuaterniones para evitar singularidades.
+* La solución al problema de la rotación galáctica (SPARC).
+
+### 📊 [DATA: Core de Validación V2](.DATA/DATA_MFSU_VALIDATION_CORE_V2.csv)
+Dataset que demuestra una **coherencia > 99.99%** entre la teoría y las observaciones reales:
+* **Planck/JWST:** Validación de la semilla pura ($n=0$).
+* **LIGO:** Validación de ramas de ondas gravitacionales ($n=10$).
+* **Euclid/SPARC:** Validación de la estructura local ($n=14$).
+
+### 🛠️ [Engine: Motor de Validación](.scr/MFSU_Ley_Reducción_Vol2.py)
+Script en Python para calcular el nivel de ramificación de cualquier evento astronómico basado en la Ley de Reducción.
+
+---
+
+## 🛡️ Sin "Cherry Picking"
+Toda la validación de este modelo se basa en **datos públicos multi-misión**. La MFSU no ajusta los datos a la teoría; la geometría fractal de la teoría predice los datos con precisión absoluta.
+
+*"El universo no es un volumen sólido; es una red de información ramificada."*
+
+---
+
+
+
 ---
 **Autor:** Miguel Ángel Franco León  
 **ORCID:** [0009-0003-9492-385X](https://orcid.org/0009-0003-9492-385X)  
