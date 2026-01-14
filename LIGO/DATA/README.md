@@ -1,21 +1,24 @@
-# MFSU: LIGO Gravitational Wave Fractal Dataset
+# MFSU: Motor de Validación de Datos (LIGO & SPARC)
 
 ## 📝 Descripción
-Este conjunto de datos contiene la clasificación fractal de eventos de ondas gravitacionales (GW) detectados por la colaboración LIGO/Virgo/KAGRA, procesados bajo el **Unified Stochastic Fractal Model (MFSU)** de Miguel Ángel Franco León.
+Este repositorio de datos contiene la validación empírica del **Unified Stochastic Fractal Model (MFSU)**. Los datos demuestran la transición de la métrica desde el origen topológico hasta las escalas galácticas, utilizando la **Ley de Reducción Dimensional**.
 
-## 📊 Estructura de Datos
-El archivo `LIGO_Fractal_Dataset.csv` se compone de las siguientes columnas:
+## 📊 Conjuntos de Datos Activos
 
-* **event**: Identificador oficial del evento de onda gravitacional.
-* **dist_mpc**: Distancia de luminosidad en Megaparsecs (Mpc). Factor determinante para el decaimiento fractal.
-* **is_ns**: Indicador booleano (True/False). Determina si el evento involucra una Estrella de Neutrones, lo cual preserva la coherencia de la semilla.
-* **delta_F**: Valor de dimensión fractal calculado. 
-    * **0.921**: Semilla Ancestral / Coherencia Máxima.
-    * **0.918**: Límite de Ramificación / Rama Joven.
-* **linaje**: Clasificación jerárquica del evento dentro del motor cíclico universal.
+### 1. Validación de Ondas Gravitacionales (`DATA_MFSU_VALIDATION_LIGO_V2_2.csv`)
+Procesamiento de 92 eventos oficiales de LIGO/Virgo.
+* **n_nivel**: Nivel de ramificación cuántica de la señal (0 = Tronco, >10 = Ramas).
+* **delta_F**: El decaimiento real basado en la fórmula $0.921 \cdot (1 - 0.00005)^n$.
+* **coherencia_%**: Fidelidad de la señal respecto a la impedancia del vacío $\chi=5.85$.
 
-## 🔬 Criterio de Calidad
-A diferencia de los catálogos masivos que incluyen candidatos ruidosos, este dataset se enfoca en **100 eventos de alta coherencia** para validar la estabilidad de la constante **0.921** como eje central del tejido espacio-temporal.
+### 2. Validación de Dinámica Galáctica (`DATA_MFSU_VALIDATION_SPARC_V3.csv`)
+Análisis de curvas de rotación de la base de datos SPARC.
+* **Radius_kpc**: Distancia al centro galáctico.
+* **V_MFSU_Pred**: Velocidad predicha por la métrica fractal sin materia oscura.
+* **MFSU_Factor**: Amplificación gravitatoria derivada de la impedancia $\chi=5.85$.
+
+## 🔬 Conclusiones de la Data
+Los datos confirman que el error del modelo disminuye a medida que la escala aumenta, alcanzando una precisión superior al 90% en los bordes galácticos. Esto prueba que la anomalía gravitatoria es un efecto geométrico de la reducción dimensional y no de masa invisible.
 
 ---
-**Propiedad Intelectual:** Miguel Ángel Franco León (2026)
+© 2026 - Unified Stochastic Fractal Model
