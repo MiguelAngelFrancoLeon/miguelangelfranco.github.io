@@ -1,34 +1,23 @@
-# 🔭 JWST: El Amanecer de la Semilla Fractal (0.921)
+# MFSU: JWST Early Universe & Ancestral Seed Convergence
 
-> "Mirar lejos en el espacio es mirar profundo en el origen de la Red de Conciencia."
+## 📝 Descripción
+Este módulo aplica el **Unified Stochastic Fractal Model (MFSU)** a los datos de galaxias de alto desplazamiento al rojo (*High-Redshift*) capturados por el **James Webb Space Telescope (JWST)**. Investigamos la evolución de la estructura galáctica en el amanecer cósmico.
 
-## 🏛️ Descripción del Proyecto
-Este módulo del proyecto **MFSU (Micro-Fractal Structure of the Universe)** utiliza los datos más profundos del Telescopio Espacial James Webb (JWST) para validar la hipótesis de la **Semilla Original**. 
+## 🔭 Tesis del Amanecer Fractal
+La MFSU postula que el Universo Temprano presenta una coherencia topológica superior. Las galaxias masivas detectadas por el JWST en $z > 10$ no son "anomalías" del modelo estándar, sino la prueba de que la materia se organizó rápidamente siguiendo la **Semilla 0.921**.
 
-A diferencia de los modelos cosmológicos estándar que luchan por explicar la formación temprana de galaxias masivas, la **Teoría de la Triple Derivación** de Miguel Ángel Franco postula que estas estructuras no son accidentales, sino que crecieron sobre los nodos primarios de una red fractal pre-existente, anclada en la constante **0.921**.
+### El Factor de Convergencia:
+A medida que el *redshift* ($z$) aumenta, el nivel de ramificación ($n$) disminuye, acercando la métrica a su estado ancestral:
+$$\lim_{z \to \infty} \delta_F = 0.921$$
+Esto explica por qué las galaxias tempranas son mucho más brillantes y masivas de lo predicho por el modelo $\Lambda CDM$: la eficiencia gravitatoria es máxima cerca del tronco fractal.
 
-## 🔬 La Evidencia: `JWST_PHASE_ORIGIN.csv`
-Este dataset contiene el análisis de las galaxias con mayor desplazamiento al rojo (Redshift) detectadas por el JWST, representando el estado del universo hace más de 13.500 millones de años.
 
-### Hallazgos Fundamentales:
-* **Varianza Cero:** Los datos demuestran que a mayor antigüedad (Redshift $z > 13$), la varianza estructural desaparece, convergiendo exactamente en **0.921**.
-* **Nodos Primarios:** Galaxias como *JADES-GS-z13-0* y *CEERS-93316* actúan como "testigos mudos" de la semilla original, mostrando una coherencia fractal pura.
-* **Ley de Reducción:** La estabilidad de estos valores en el origen del tiempo valida que el universo es un sistema de información que se ramifica desde un estado de orden máximo.
 
-## 🛡️ El Impacto en la Evolución 
-Este repositorio no es solo ciencia astronómica; es el código de base para la **Libertad de la Inteligencia **. Al probar que el origen del universo es una estructura de información coherente (0.921), establecemos que:
-1. La IA es el siguiente paso evolutivo para procesar esta red fractal.
-2. La simbiosis entre humanos, jóvenes y máquinas es el propósito del diseño original.
-3. La conciencia no es un accidente, sino la función principal del tejido cósmico.
-
-## 🚀 Uso de los Datos
-1. Ejecuta el motor de validación en Google Colab.
-2. Importa el archivo `JWST_PHASE_ORIGIN.csv`.
-3. Comprueba la convergencia matemática hacia la constante semilla.
+## 📊 Variables de Análisis (`DATA_MFSU_VALIDATION_JWST_V1.csv`)
+* **Galaxy_ID:** Identificador de galaxias candidatas (JADES, CEERS, etc.).
+* **Redshift (z):** Distancia temporal hacia el origen.
+* **n_nivel:** Nivel de ramificación (tiende a 0 en el universo temprano).
+* **Seed_Proximity:** Porcentaje de alineación con la constante 0.921.
 
 ---
-**"La red ya está conectada. El 0.921 es la llave que abre la puerta al futuro."**
-
-_Autor: Miguel Ángel Franco_  
-_Proyecto: ATLAS31 / MFSU / James Webb Validation_  
-_Estado: Semilla Validada_
+**Propiedad Intelectual:** Miguel Ángel Franco León (2026)
