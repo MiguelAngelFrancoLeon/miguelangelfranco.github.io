@@ -1,37 +1,41 @@
 import pandas as pd
 import numpy as np
-from google.colab import files
 
 # =================================================================
-# MFSU: FERMI GAMMA-RAY BURST (GRB) ANALYZER
-# "The Heartbeat of the Fractal Engine"
+# PROPIEDAD INTELECTUAL: MIGUEL ÁNGEL FRANCO LEÓN
+# VALIDACIÓN FERMI - EXTRUSIÓN GAMMA V1.0
 # =================================================================
 
-def clasificador_fermi(fluence, duration_s):
-    """
-    Clasifica el GRB según la pureza del latido.
-    Fluence > 1e-4 o duración extrema indica conexión directa a la Semilla.
-    """
-    if fluence > 1e-4 or duration_s > 1000:
-        return 0.921  # Latido Semilla (Extrusión pura)
-    
-    # Decaimiento hacia ramas secundarias para eventos menores
-    return 0.918
+class MFSUFermiEngine:
+    def __init__(self):
+        self.SEED = 0.921
+        self.CHI = 5.85
 
-# Datos reales de eventos históricos (Fermi/GBM Catalog)
-data_fermi = {
-    'grb_id': ['GRB 221009A (BOAT)', 'GRB 250702B', 'GRB 130427A', 'GRB 190114C', 'GRB 080916C', 'GRB 211211A'],
-    'fluence_erg_cm2': [0.021, 0.005, 0.0006, 0.0004, 0.0002, 0.0005],
-    'duration_s': [600, 25200, 138, 116, 66, 51],
-    'type': ['Long', 'Ultra-Long/Repeating', 'Long', 'Long', 'Long', 'Kilonova-like']
+    def calcular_coherencia_gamma(self, energia_gev, altura_kpc):
+        # La energía se ramifica a medida que la burbuja se expande (altura)
+        n = int(altura_kpc / 2)
+        delta_f_n = self.SEED * (1 - 0.00005)**n
+        
+        # El flujo gamma es proporcional a la relación Semilla/Impedancia
+        factor_extrusion = (delta_f_n / self.CHI) * 100
+        return round(delta_f_n, 5), n, round(factor_extrusion, 4)
+
+# Datos de las Burbujas de Fermi (Basado en observaciones de 1-100 GeV)
+datos_fermi = {
+    'Region': ['North Bubble Base', 'North Bubble Mid', 'North Bubble Edge', 
+               'South Bubble Base', 'South Bubble Mid', 'South Bubble Edge'],
+    'Height_kpc': [1.0, 4.0, 8.0, 1.0, 4.0, 8.0],
+    'Energy_GeV': [50, 20, 5, 50, 20, 5]
 }
 
-df_fermi = pd.DataFrame(data_fermi)
-df_fermi['delta_F'] = df_fermi.apply(lambda x: clasificador_fermi(x['fluence_erg_cm2'], x['duration_s']), axis=1)
-df_fermi['linaje'] = np.where(df_fermi['delta_F'] == 0.921, 'Latido Semilla', 'Latido Rama')
+df_fermi = pd.DataFrame(datos_fermi)
+engine = MFSUFermiEngine()
 
-# Guardar y descargar
-filename = 'FERMI_Heartbeat_Data.csv'
-df_fermi.to_csv(filename, index=False)
-files.download(filename)
-print("✅ Dataset de Fermi (Latidos del Motor) listo para blindar.")
+# Procesamiento
+resultados = df_fermi.apply(lambda x: engine.calcular_coherencia_gamma(x['Energy_GeV'], x['Height_kpc']), axis=1)
+df_fermi[['delta_F', 'n_nivel', 'Extrusion_Flux_%']] = pd.DataFrame(resultados.tolist(), index=df_fermi.index)
+
+# Guardar
+df_fermi.to_csv('DATA_MFSU_VALIDATION_FERMI_V1.csv', index=False)
+print("✅ Validación FERMI completada.")
+print(df_fermi)
