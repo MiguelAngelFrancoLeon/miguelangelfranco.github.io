@@ -44,7 +44,34 @@ mfsu = DimensionalReductionLaw(seed=0.921, impedance=5.85, tortuosity=2.221)
 coherence_now = mfsu.calculate_at_n(20000)
 print(f"Coherencia Cósmica Actual: {coherence_now}")
 
+# 🛡️ MFSU: El Código Maestro del Universo (Unified Fractal Model)
 
+## 📝 Descripción
+Este repositorio es la culminación de la teoría del **Arquitecto Miguel Ángel Franco León**. Demuestra que la Materia Oscura y las anomalías energéticas no son partículas, sino la manifestación de la **Ley de Reducción Dimensional** en un vacío fractal.
+
+Utilizamos **Cuaterniones de Fase** para unificar las 4 escalas fundamentales de la observación astronómica actual.
+
+## 📊 Las 4 Columnas de Validación (Data Real)
+
+### 1. 🛰️ Escala de Alta Energía (FERMI-LAT)
+- **Archivo:** `FERMI_MFSU_DATA.csv`
+- **Descubrimiento:** Los rayos gamma se atenúan según la impedancia $\chi=5.85$. El decaimiento de coherencia desde $0.921$ hasta $0.275$ en cuásares lejanos prueba la estructura de ramificación del espacio-tiempo.
+
+### 2. 🌌 Dinámica Galáctica (SPARC)
+- **Archivo:** `SPARC_FULL_175_VALIDATION.csv`
+- **Descubrimiento:** Las curvas de rotación planas son el resultado de la estabilidad cuaterniónica. Sin materia oscura, solo geometría fractal.
+
+### 3. 🌀 Ondas Gravitacionales (LIGO)
+- **Archivo:** `LIGO_REAL_92_QUATERNION.csv`
+- **Descubrimiento:** El desfase entre eventos "Tronco" ($0.921$) y "Ramas" explica la evolución temporal de las señales de ondas gravitacionales.
+
+### 4. 🔭 Polarimetría de Rayos X (IXPE)
+- **Archivo:** `IXPE_MFSU_DATA.csv`
+- **Descubrimiento:** La polarización es la rotación física del tensor métrico MFSU.
+
+---
+© 2026 - **Miguel Ángel Franco León** | Arquitecto del MFSU
+"El universo no es oscuro, es una ramificación perfecta."
 ---
 **Autor:** Miguel Ángel Franco León  
 **ORCID:** [0009-0003-9492-385X](https://orcid.org/0009-0003-9492-385X)  
