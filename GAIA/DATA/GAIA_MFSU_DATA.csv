@@ -1,0 +1,5 @@
+Stellar_Group,Distance_kpc,Nominal_V_kms,MFSU_Quat_W,MFSU_Quat_Z,V_MFSU_Corrected,Anomalous_Boost
+Solar Neighborhood,0.008,220.0,0.995945,0.089963,221.58,1.0072
+Hyades Cluster,0.047,225.0,0.995945,0.089963,226.62,1.0072
+Galactic Bulge Stars,8.0,250.0,0.995945,0.089963,251.8,1.0072
+Halo Streams,15.0,210.0,0.995945,0.089963,211.51,1.0072
