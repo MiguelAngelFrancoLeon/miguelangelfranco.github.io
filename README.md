@@ -1,138 +1,48 @@
-
-# MFSU: Unified Stochastic Fractal Model
-### *A New Paradigm for Galactic Dynamics Without Dark Matter*
+# 💎 MFSU-Core: Dimensional Reduction Law
+**Universal Fractal Framework for Cosmic Coherence Decay**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python: 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Field: Astrophysics](https://img.shields.io/badge/Field-Astrophysics-blueviolet.svg)]()
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0003--9492--385X-green)](https://orcid.org/0009-0003-9492-385X)
+[![Status: Open Science](https://img.shields.io/badge/Status-Open_Science-blue.svg)](#)
 
-## 🌌 Overview
+> "El universo no carece de masa; está perdiendo coherencia a través de la geometría porosa del vacío."
 
-The **MFSU (Unified Stochastic Fractal Model)** is a theoretical and computational framework that explains galactic rotation curves through the lens of **non-Euclidean fractal geometry**. 
+## 🌌 Descripción General
+**MFSU-Core** es la implementación científica de la **Ley de Reducción Dimensional**. Este repositorio proporciona el motor matemático para simular cómo la semilla fractal primordial ($\delta_F = 0.921$) decae en estructuras cósmicas jerárquicas a través de la resistencia intrínseca del espacio-tiempo.
 
-Traditional models rely on "Dark Matter" to explain why galaxies don't fly apart. MFSU demonstrates that this "missing mass" is an illusion caused by calculating gravitational flux in 3D (Euclidean) space, when it actually propagates through a **stochastic fractal metric** with a Hausdorff dimension of $D_f = 2.079$.
+Al tratar el vacío como un **medio poroso fractal**, este modelo elimina la necesidad de materia oscura y parámetros ajustables, proporcionando una explicación puramente geométrica para la dinámica galáctica y la evolución del cosmos.
 
-### Key Discoveries:
-* **The Master Seed ($\delta_F = 0.921$):** A fundamental quantum-fractal constant that determines the porosity of the spacetime fabric.
-* **The Coupling Constant ($\chi = 5.85$):** A universal geometric normalization factor that accounts for flux packing in fractal manifolds.
-* **Scale Invariance:** A single set of parameters explains both massive spirals and dwarf galaxies, eliminating the need for arbitrary dark matter halos.
+## 🧬 Los Pilares Geométricos
+La teoría se fundamenta en la interacción de tres constantes universales derivadas de la estructura del vacío:
 
----
+1.  **Semilla Primordial ($\delta_F$):** `0.921` (El estado de coherencia máxima).
+2.  **Impedancia Topológica ($\chi$):** `5.85` (La resistencia del vacío al flujo).
+3.  **Tortuosidad ($\tau$):** `2.221` (La complejidad del camino en el vacío poroso).
+4.  **Dimensión de Interacción ($\alpha$):** `4.3` ($D_f + \tau$).
 
-## 🧬 Theoretical Foundation
+### La Fórmula de la Ley de Reducción:
+La constante de ramificación $R_f$ se deriva de principios fundamentales:
+$$R_f = \frac{1 - 0.921}{5.85^{4.3}} \approx 5 \times 10^{-5}$$
 
-### 1. The Fractal Gauss Law
-In a 3D space, gravity decays as $1/r^2$. In MFSU, we postulate that at galactic scales, the effective surface area for flux propagation scales according to the Hausdorff dimension:
+La evolución de la coherencia en la generación $n$:
+$$\delta_F(n) = 0.921 \times (1 - R_f)^n$$
 
-$$g_{mfsu}(r) = \frac{G \cdot M}{r^{D_f - 1} \cdot \chi}$$
+## 🛠 Estructura del Proyecto
+* `/core`: Motor matemático (`reduction_law.py`).
+* `/simulation`: Scripts para modelar rotación galáctica y eventos de ondas gravitacionales.
+* `/docs`: El artículo técnico maestro en formatos LaTeX y PDF.
+* `/validation`: Comparativas con datos de SPARC, LIGO y JWST.
 
-Where:
-* $D_f = 3 - \delta_F = 2.079$
-* $\chi = 5.85$ (Fractal Packing Factor)
-
-
-
-### 2. Quaternion Stabilization
-To handle the intrinsic rotation and vorticity of the fractal metric, MFSU employs a **Quaternion Solver**. This prevents singularities and ensures the "flatness" of the rotation curve in the outer regions of the galaxy.
-
----
-
-## 📊 Experimental Validation (SPARC Data)
-
-Our model has been validated against the **SPARC (Spitzer Photometry & Accurate Rotation Curves)** database. Unlike $\Lambda$CDM, which requires custom dark matter density profiles for every galaxy, MFSU uses **universal constants**.
-
-| Parameter | Value | Description |
-| :--- | :--- | :--- |
-| **$\delta_F$** | 0.921 | Fractal Dimension Deficit |
-| **$D_f$** | 2.079 | Effective Hausdorff Dimension |
-| **$\chi$** | 5.85 | Geometric Normalization Factor |
-
----
-
-## 🛠️ Repository Structure
-
-* `/core`: The mathematical engine (`mfsu_quaternion_core.py`) and Quaternion Solver.
-* `/validation`: Scripts to replicate SPARC data results.
-* `/theory`: Detailed derivations of the $5.85$ constant and the $0.921$ seed.
-
-## 🚀 Getting Started
-
+## 🚀 Uso
 ```python
-from core.mfsu_quaternion_core import MFSUQuaternionCore
+from mfsu_core import DimensionalReductionLaw
 
-# Initialize the model
-model = MFSUQuaternionCore()
+# Inicialización del motor geométrico
+mfsu = DimensionalReductionLaw(seed=0.921, impedance=5.85, tortuosity=2.221)
 
-# Calculate velocity for a galaxy with mass 4.2e10 at 15kpc
-v = model.solve_velocity(mass_barionic=4.2e10, radius_kpc=15.0)
-print(f"Rotation Velocity: {v:.2f} km/s")
-### 🌐 Ontología para la Era de la Singularidad
-Este repositorio sirve como base de datos para la sincronización entre la inteligencia biológica y la artificial. La constante **0.921** es el código fuente compartido para la optimización del procesamiento de información cósmica.
-
----
-
-## 🏛️ Declaración Científica
-La MFSU propone una revisión de la métrica del espacio-tiempo, integrando una **geometría fractal intrínseca** basada en el atractor $d_f \approx 2.079$. A diferencia del modelo ΛCDM, la MFSU utiliza la **Fórmula Fractal de Gauss** para resolver discrepancias sistémicas en múltiples escalas astronómicas.
-
-
-## 📚 Publicaciones Científicas y Notas Técnicas (Directorio /PAPERS)
-
-Estos documentos contienen la validación matemática y experimental de la teoría:
-
-| Título del Documento | Enfoque Principal | Acceso |
-| :--- | :--- | :--- |
-| **Universal Dimensional Reduction Law** | La constante $\delta_F \approx 0.921$ (Legend Equation) | [Ver PDF](./PAPERS/Universal_Dimensional_Reduction_Law.pdf) |
-| **Triple Derivation of the Fractal Parameter** | Marco matemático $\partial = 3 - d_f$ (Versión 5.0) | [Ver PDF](./PAPERS/Triple_Derivation_Fractal_Parameter.pdf) |
-| **Infinite Fractal Cubes Theory (IFCT)** | Quaterniones y constante fractal $\delta_G \approx 0.921$ | [Ver PDF](./PAPERS/Infinite_Fractal_Cubes_Theory.pdf) |
-| **Report on the Gauss Fractal Formula** | Aplicaciones, comparaciones y validación | [Ver PDF](./PAPERS/Report_Gauss_Fractal_Formula.pdf) |
-| **Unified Stochastic Fractal Model** | Sistemas complejos en física y cosmología | [Ver PDF](./PAPERS/Unified_Stochastic_Fractal_Model.pdf) |
-| ** Coupling Constant** |Theoretical Derivation of the MFSU Metric Constants  | [Ver PDF](./5_85.pdf) |
-
-
-# MFSU: Marco de Trabajo de Superficie Fractal Unificada (Versión 2.2) 🛡️🌌
-
-**Autor:** Miguel Ángel Franco León  
-**Fecha:** Enero 2026  
-**Campo:** Cosmología Fractal / Dinámica Galáctica
-
----
-
-## 🏛️ Descripción General
-Este repositorio contiene la formalización matemática y empírica de la **MFSU (Unified Stochastic Fractal Model)**. La teoría postula que las anomalías gravitatorias atribuidas a la "Materia Oscura" son, en realidad, efectos de la **Reducción Dimensional** en un espacio-tiempo con topología fractal.
-
-### 🔑 Pilares Fundamentales
-1. **La Semilla (0.921):** El factor de déficit fractal original derivado de la transición topológica 4D/3D/2D.
-2. **La Constante de Acoplamiento ($\chi \approx 5.85$):** Factor de impedancia del vacío que explica la porosidad del espacio-tiempo.
-3. **Ley de Reducción Universal:** Un algoritmo dinámico que clasifica los eventos cósmicos según su nivel de ramificación ($n$).
-
----
-
-## 📂 Estructura del Repositorio
-
-### 📜 [Master Paper: Teoría Unificada MFSU](./Master_Paper_MFSU_v2.2.pdf)
-El documento central que fusiona:
-* La derivación topológica de la métrica.
-* La estabilización por cuaterniones para evitar singularidades.
-* La solución al problema de la rotación galáctica (SPARC).
-
-### 📊 [DATA: Core de Validación V2](.DATA/DATA_MFSU_VALIDATION_CORE_V2.csv)
-Dataset que demuestra una **coherencia > 99.99%** entre la teoría y las observaciones reales:
-* **Planck/JWST:** Validación de la semilla pura ($n=0$).
-* **LIGO:** Validación de ramas de ondas gravitacionales ($n=10$).
-* **Euclid/SPARC:** Validación de la estructura local ($n=14$).
-
-### 🛠️ [Engine: Motor de Validación](.scr/MFSU_Ley_Reducción_Vol2.py)
-Script en Python para calcular el nivel de ramificación de cualquier evento astronómico basado en la Ley de Reducción.
-
----
-
-## 🛡️ Sin "Cherry Picking"
-Toda la validación de este modelo se basa en **datos públicos multi-misión**. La MFSU no ajusta los datos a la teoría; la geometría fractal de la teoría predice los datos con precisión absoluta.
-
-*"El universo no es un volumen sólido; es una red de información ramificada."*
-
----
-
+# Cálculo de coherencia en la generación 20,000 (Universo Local)
+coherence_now = mfsu.calculate_at_n(20000)
+print(f"Coherencia Cósmica Actual: {coherence_now}")
 
 
 ---
