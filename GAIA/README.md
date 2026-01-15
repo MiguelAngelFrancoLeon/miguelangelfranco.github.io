@@ -1,22 +1,6 @@
-# MFSU: GAIA Stellar Kinematics & Fractal Vorticity
-
-## 📝 Descripción
-Este módulo aplica el **Unified Stochastic Fractal Model (MFSU)** a los datos de astrometría de precisión de la misión **Gaia (ESA)**. Analizamos las anomalías en las velocidades residuales de las estrellas en el disco galáctico.
-
-## 🔭 Tesis del Movimiento Fractal
-La MFSU postula que el movimiento estelar no ocurre en un espacio vacío, sino en un flujo organizado por la **Métrica 5.85**. Las desviaciones en las velocidades (proper motions) son el resultado de la interacción entre la masa bariónica y la vorticidad del vacío fractal.
-
-### Ecuación de Ajuste Gaia-MFSU:
-Las estrellas experimentan una aceleración adicional $a_{mfsu}$ dependiente de la semilla 0.921:
-$$a_{mfsu} = a_{newton} \cdot \left( \frac{\delta_F}{\chi} \right)^{-1}$$
-
-
-
-## 📊 Variables de Análisis (`DATA_MFSU_VALIDATION_GAIA_V1.csv`)
-* **Source_ID:** Identificador único de Gaia DR3.
-* **Parallax:** Distancia precisa para determinar el nivel de ramificación $n$.
-* **Radial_Velocity:** Velocidad medida vs. Velocidad predicha por MFSU.
-* **Fractal_Vorticity:** El grado de torsión del espacio-tiempo en esa región.
-
+### 4.5 Local Stellar Scale: Gaia DR3 Precision
+Validation using **Gaia Mission** astrometry. 
+* **Stellar Drift:** The "anomalous" velocities in stellar streams are not caused by sub-halos of dark matter, but by the **Quaternionic Drift** ($q_z$) induced by the vacuum's tortuosity ($\tau = 2.221$).
+* **Local Coherence:** Within the solar neighborhood, the metric remains close to the $0.921$ trunk, ensuring the stability of planetary orbits while allowing for the observed galactic rotation curve boost.
 ---
 **Propiedad Intelectual:** Miguel Ángel Franco León (2026)
