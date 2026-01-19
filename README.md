@@ -70,7 +70,19 @@ mfsu = DimensionalReductionLaw(seed=0.921, impedance=5.85, tortuosity=2.221)
 # Cálculo de coherencia en la generación 20,000 (Universo Local)
 coherence_now = mfsu.calculate_at_n(20000)
 print(f"Coherencia Cósmica Actual: {coherence_now}")
+# Unified Stochastic Fractal Model (MFSU)
 
+
+## 📚 Publications & Theoretical Foundation
+
+The mathematical and physical basis of this project is documented in the following publications:
+
+* **Main Paper (v3.0):** [The Law of Universal Dimensional Reduction: A Geometric Framework for Cosmic Coherence and Spacetime Tortuosity](https://zenodo.org/records/18297246) - *DOI: 10.5281/zenodo.18297246*
+* **Mathematical Framework:** [Triple Derivation of the Fractal Parameter ∂ = 3 - df](https://zenodo.org/records/18044044)
+* **Original Seed Equation:** [Universal Dimensional Reduction Law: δ_F ≈ 0.921 (MFSU 1- Legend Equation)](https://zenodo.org/records/18065771)
+* **The Geometric Foundation (IFCT):** [Infinite Fractal Cubes Theory (IFCT): Quaternion-Based Elimination of Coordinate Singularities and Discovery of Fractal Constant δ_G ≈ 0.921 (https://zenodo.org/records/17659738)
+    *Key: Defines the fractal lattice of spacetime and the stabilization of the 0.921 seed.*
+---
 # 🛡️ MFSU: El Código Maestro del Universo (Unified Fractal Model)
 
 ## 📝 Descripción
