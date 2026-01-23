@@ -47,12 +47,18 @@ The MFSU V2 is anchored by four universal geometric invariants, now derived from
 * **Tortuosity ($\tau = 2.221$):** The path complexity factor within the fractal dimension $D_f = 2.079$. 
 * **Universal Cohesion Constant ($\mathcal{R}_u = 0.079$):** Formerly known as the branching rate. It represents the structural energy "tax" required to maintain the vacuum's fractal tension ($1 - \delta_F$).
 
-## 3. The Law of Universal Reduction (Franco's Law V2)
+##  The Law of Universal Reduction (Franco's Law V2)
 The effective energy or coherence at any point in the fractal tree ($n$) is no longer a simple linear loss, but a **Topological Saturation**:
 
 $$\delta_F(n) = 0.921 \cdot e^{-(\mathcal{R}_u \cdot n)}$$
 
 For the **Original Branch ($n=0$)**, the value saturates at **$0.921$**, explaining why galactic rotation curves align at this precise point.
+\subsection{Ley de Franco de Reducción Universal}
+Se postula que la transferencia de información en el vacío fractal sigue una ley de reducción de coherencia topológica definida por:
+\begin{equation}
+    \Phi_n = \Phi_0 \cdot e^{-(1 - \delta_F)n}
+\end{equation}
+Donde $\Phi_0$ representa la intensidad en la Rama Original. Esta formulación elimina las singularidades euclidianas y establece que el factor de disipación es una constante intrínseca del tejido espacio-temporal ($\mathcal{R}_u = 0,079$).
 
 ### Quaternionic Rotation Operator ($q$)
 To resolve Euclidean singularities and model the 4D orientation of the spin-network, we apply:
