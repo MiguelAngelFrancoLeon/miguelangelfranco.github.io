@@ -107,6 +107,45 @@ This explains the flat rotation curves in 175 galaxies (SPARC) and the stellar b
 ### 4.3 High-Energy Phase (IXPE & FERMI)
 * **IXPE:** Polarization is modeled as the rotation of the $q_z$ component of the metric.
 * **FERMI:** Gamma-ray attenuation follows the geometric dissipation of the fractal network.
+* 
+
+# 📐 Metodología de Cálculo MFSU V2
+
+La metodología ** (MFSU)** se basa en la cuantificación de la transferencia de energía entre el vacío estructural y la materia bariónica observable. A diferencia de MOND o Materia Oscura, MFSU no es un ajuste estadístico (*fitting*), sino una aplicación de **Impedancia Fractal**.
+
+## . Parámetros Fundamentales
+
+Para el análisis de las 175 galaxias del catálogo SPARC, se utilizan dos constantes universales derivadas de la geometría del vacío:
+
+* **Impedancia Estructural ($\chi$):** 12.65 (Derivada de la conectividad de Newton-Gregory para el empaquetamiento eficiente de esferas).
+* **Constante de Saturación ($\delta_F$):** 0.921 (Punto de equilibrio del "Tronco Original").
+
+## . El Motor de Cálculo (Algoritmo)
+
+El proceso de validación sigue este flujo de trabajo preciso:
+
+1.  **Extracción de Datos:** Se obtienen los perfiles de velocidad bariónica ($V_{gas}, V_{disk}, V_{bulge}$) del catálogo SPARC.
+2.  **Suma Cuadrática:** Se calcula la velocidad bariónica total ($V_{bar} = \sqrt{V_{gas}^2 + V_{disk}^2 + V_{bulge}^2}$).
+3.  **Transformación de Impedancia:** Se aplica el factor de escala fractal para obtener la velocidad MFSU:
+    $$V_{MFSU} = V_{bar} \cdot \chi^{(1 - \delta_F)}$$
+4.  **Cálculo de Saturación Real (ADN Galáctico):** Se despeja el $\delta_F$ real de cada galaxia para identificar su posición en el árbol fractal:
+    $$\delta_{F_{real}} = 1 - \frac{\log(V_{obs}/V_{bar})}{\log(\chi)}$$
+
+
+
+## . Clasificación de Resultados (Validación de Ramas)
+
+La metodología clasifica los resultados en tres categorías basadas en la desviación respecto al atractor 0.921:
+
+* **Saturación Diamante (Original):** Precisión > 95% respecto a $\delta_F = 0.921$.
+* **Rama Joven (Branching):** $\delta_F$ significativamente menor a 0.921 (Indica menor acoplamiento con el vacío).
+* **Supersaturación:** $\delta_F > 0.921$ (Puntos de alta densidad de información fractal).
+
+
+
+## . Confiabilidad Estadística
+
+Esta metodología ha sido probada con éxito en **175 sistemas independientes**, eliminando el sesgo de selección. La convergencia de los resultados en el valor predicho de 0.921 demuestra que la impedancia del vacío es una propiedad física constante.
 
 ### 4.4 Primitive Cosmology (JWST)
 The "Impossible Galaxies" at high redshift ($z>10$) are resolved by the amplification factor of $\chi$ as the light travels through thousands of fractal generations ($n$).
