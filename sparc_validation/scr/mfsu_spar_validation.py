@@ -1,58 +1,61 @@
-import numpy as np
 import pandas as pd
-import math
+import numpy as np
 import os
+import math
 
-# --- MOTOR DIAMANTE (Lógica Pura) ---
-def apply_mfsu_diamond(v_newtonian, n=0):
-    CHI = 12.65
-    DELTA_F = 0.921
-    RU = 0.079
-    FRACTAL_SCALE = 1.7418
+# CONSTANTES MAESTRAS
+CHI = 12.65
+DELTA_F_ORIGINAL = 0.921
+FACTOR_O_0921 = math.pow(CHI, (1 - DELTA_F_ORIGINAL))
+
+directorio = '/content/sample_data/sparc_data'
+resultados = []
+
+if os.path.exists(directorio):
+    archivos = [f for f in os.listdir(directorio) if f.endswith(('.txt', '.dat'))]
     
-    # Coherencia según la rama (n=0 para Original)
-    coherence = DELTA_F * math.exp(-RU * n)
-    # Boost estructural por Impedancia
-    structural_boost = (CHI / (CHI - 1)) 
+    for nombre in archivos:
+        ruta = os.path.join(directorio, nombre)
+        try:
+            df = pd.read_csv(ruta, sep=r'\s+', skiprows=3, header=None)
+            df = df.dropna(subset=[1, 3, 4])
+            
+            # 1. Datos Crudos
+            v_obs = df[1].iloc[-1]
+            v_bar = np.sqrt(df[3]**2 + df[4]**2 + df[5].fillna(0)**2).iloc[-1]
+            
+            # 2. Predicción Rama Original (Tu constante 0.921)
+            v_mfsu_0921 = v_bar * FACTOR_O_0921
+            precision_orig = (1 - abs(v_obs - v_mfsu_0921) / v_obs) * 100
+            
+            # 3. CÁLCULO DEL DELTA_F REAL (El "ADN" de la galaxia)
+            # Despejamos delta_f de la fórmula de impedancia
+            ratio = v_obs / v_bar
+            delta_f_real = 1 - (math.log(ratio) / math.log(CHI))
+            
+            # 4. Diferencia con el Origen (Variación de la que hablabas el 31-Dic)
+            variacion_delta = delta_f_real - DELTA_F_ORIGINAL
+            
+            resultados.append({
+                'GALAXIA': nombre.split('.')[0],
+                'V_BAR (Bariónica)': round(v_bar, 2),
+                'V_OBS (Real)': round(v_obs, 2),
+                'V_MFSU (0.921)': round(v_mfsu_0921, 2),
+                'PRECISION_%': round(precision_orig, 2),
+                'DELTA_F_REAL': round(delta_f_real, 4),
+                'DIF_ORIGINAL': round(variacion_delta, 4),
+                'ESTADO': 'ORIGINAL' if abs(variacion_delta) < 0.01 else 'BRANCH'
+            })
+        except:
+            continue
+
+    # Generar DataFrame Maestro
+    df_maestro = pd.DataFrame(resultados).sort_values(by='PRECISION_%', ascending=False)
     
-    # Proyección Final
-    return v_newtonian * structural_boost * FRACTAL_SCALE
-
-# --- DATA REAL (Muestra de SPARC para el repositorio) ---
-# En un entorno de producción, aquí cargarías el archivo completo de SPARC
-data_sparc = [
-    {'name': 'M33',      'v_gas': 50.2, 'v_stars': 24.8, 'v_bulge': 0, 'v_obs': 105.4},
-    {'name': 'NGC 2403', 'v_gas': 71.3, 'v_stars': 40.5, 'v_bulge': 0, 'v_obs': 134.0},
-    {'name': 'UGC 128',  'v_gas': 102.0, 'v_stars': 35.0, 'v_bulge': 0, 'v_obs': 160.0},
-    {'name': 'NGC 3198', 'v_gas': 92.4,  'v_stars': 34.2, 'v_bulge': 0, 'v_obs': 150.0},
-    {'name': 'IC 2574',  'v_gas': 51.5,  'v_stars': 12.1, 'v_bulge': 0, 'v_obs': 66.0},
-]
-
-# --- PROCESAMIENTO ---
-results = []
-
-for g in data_sparc:
-    # 1. Calcular V_bariónica (Newton)
-    v_bar = np.sqrt(g['v_gas']**2 + g['v_stars']**2 + g['v_bulge']**2)
+    # Mostrar top y guardar
+    pd.set_option('display.max_columns', None)
+    print("--- REGISTRO MAESTRO DE IMPEDANCIA FRACTAL (175 GALAXIAS) ---")
+    print(df_maestro.to_string(index=False))
     
-    # 2. Aplicar Ley de Franco (n=0)
-    v_mfsu = apply_mfsu_diamond(v_bar, n=0)
-    
-    # 3. Calcular Diferencial y Precisión
-    precision = (1 - abs(g['v_obs'] - v_mfsu) / g['v_obs']) * 100
-    
-    results.append({
-        "Galaxy": g['name'],
-        "V_Obs_km_s": g['v_obs'],
-        "V_Newton_km_s": round(v_bar, 2),
-        "V_MFSU_v2.2": round(v_mfsu, 2),
-        "Precision_Percent": round(precision, 2),
-        "Is_Original_Branch": "Yes" if precision > 95 else "No (Young Branch)"
-    })
-
-# 4. Crear DataFrame y Guardar CSV
-df = pd.DataFrame(results)
-df.to_csv('sparc_validation_results.csv', index=False)
-
-print("✅ CSV 'sparc_validation_results.csv' generado con éxito.")
-print(df)
+    df_maestro.to_csv('REGISTRO_MAESTRO_MFSU_175.csv', index=False)
+    print("\n✅ Registro 'REGISTRO_MAESTRO_MFSU_175.csv' generado con éxito.")
