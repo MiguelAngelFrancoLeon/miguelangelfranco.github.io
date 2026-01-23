@@ -1,6 +1,6 @@
 # 🌌 MFSU V2: Validación Masiva - Catálogo SPARC (175 Galaxias)
 
-Este repositorio contiene la validación estadística y física del modelo **Master Fractal Spin Unit (MFSU) V2**. Se ha procesado el catálogo completo SPARC para demostrar que la dinámica galáctica está regida por la impedancia del vacío y no por la materia oscura.
+Este repositorio contiene la validación estadística y física del modelo ** (MFSU) V2**. Se ha procesado el catálogo completo SPARC para demostrar que la dinámica galáctica está regida por la impedancia del vacío y no por la materia oscura.
 
 ## 💎 El Descubrimiento: Saturación en 0.921
 
@@ -23,7 +23,7 @@ El análisis revela que la constante de saturación **δF = 0.921** actúa como 
 
 ## 🧬 Teoría de Ramificación Fractal (Branching)
 
-De acuerdo con la teoría presentada el 31 de diciembre, la dispersión en los valores de **δF** observada en las 175 galaxias no es un error, sino una medición de la **madurez fractal** del sistema:
+De acuerdo con la teoría presentada, la dispersión en los valores de **δF** observada en las 175 galaxias no es un error, sino una medición de la **madurez fractal** del sistema:
 
 * **δF ≈ 0.921:** Galaxias en el **Tronco Original**. Saturación total del vacío.
 * **δF < 0.921:** **Ramas Jóvenes**. Sistemas en proceso de acoplamiento a la red de espín.
