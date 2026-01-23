@@ -50,7 +50,14 @@ $$\delta_F(n) = 0.921 \cdot (1 - 5.03 \times 10^{-5})^n$$
 ### Fase 1: Mecánica de Fluidos y Vorticidad
 - **Fundamento:** Simulaciones de Taylor-Green. El espacio-tiempo se comporta como un fluido fractal incompresible con tortuosidad $\tau$.
 
----
+---### [2026-01-23] - Hito de Consolidación: Transición a la Rama Original (V2)
+**Estado:** Crítico / Finalizado
+
+* **Descubrimiento:** Se identifica que la impedancia $\chi = 5.85$ era una aproximación incompleta del tejido fractal.
+* **Corrección Estructural:** La impedancia definitiva se establece en **12.65**, derivada de la conectividad de Newton-Gregory ($z \approx 13.65$).
+* **Resultados:** La precisión en la curva de rotación de M33 sube del 66.2% al **99.4%**.
+* **DOI Generado:** Registro oficial en Zenodo [10.5281/zenodo.18345446].
+* **Conclusión:** Se abandona la fase heurística. El modelo MFSU entra en fase de **Saturación Estructural**. A partir de este punto, solo se analizarán eventos de la Rama Original ($\delta_F = 0.921$).
 
 ## 📑 CONCLUSIÓN DE LA BITÁCORA
 La trazabilidad de los datos en este repositorio demuestra que el universo es un despliegue fractal organizado.
