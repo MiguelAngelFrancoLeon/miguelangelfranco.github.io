@@ -62,7 +62,7 @@ $$\delta_F(n) = 0.921 \cdot (1 - 5.03 \times 10^{-5})^n$$
 ## 📑 CONCLUSIÓN DE LA BITÁCORA
 La trazabilidad de los datos en este repositorio demuestra que el universo es un despliegue fractal organizado.
 - **0.921:** Información Pura (El Origen).
-- **5.85:** Resistencia de Flujo (La Métrica).
+- **12.65:** Resistencia de Flujo (La Métrica).
 - **Cuaterniones:** La herramienta para navegar la rotación del vacío.
 
 **"La geometría no describe el universo; la geometría ES el universo."**
