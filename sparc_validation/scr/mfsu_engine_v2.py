@@ -58,7 +58,7 @@ for nombre, v_bar, tipo in datos_prueba:
     
     print(f"{nombre:<15} | {v_bar:<12} | {tipo:<10} | {df_usado:<8.3f} | {factor:<8.3f} | {v_final:<15.2f}")
 
-# --- VALIDACIÓN INVERSA (Lo que pedía el crítico) ---
+# --- VALIDACIÓN INVERSA  ---
 # Si tenemos V_obs (dato real) y V_bar, ¿recuperamos el delta_F correcto?
 print("\n--- PRUEBA INVERSA (Recuperando el ADN Fractal) ---")
 v_obs_real_enana = 118.5  # Supongamos que Gaia/SPARC ve esto para la Enana C
